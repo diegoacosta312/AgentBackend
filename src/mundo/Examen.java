@@ -2,8 +2,6 @@ package mundo;
 
 import java.util.*;
 
-import Materia;
-
 /**
  * 
  */
@@ -34,7 +32,7 @@ public class Examen {
      * Retorna la fecha del examen
      * @return
      */
-    public date darFecha() {
+    public Date darFecha() {
         // TODO implement here
         return null;
     }

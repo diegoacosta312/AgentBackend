@@ -2,8 +2,6 @@ package mundo;
 
 import java.util.*;
 
-import Tarea;
-
 /**
  * 
  */
@@ -131,9 +129,9 @@ public class Materia {
      * @param codigoTarea 
      * @return
      */
-    public tarea darTarea(int codigoTarea) {
-        // TODO implement here
-        return null;
+    public Tarea darTarea(int codigoTarea) {
+        Tarea coincidencia = null;
+        return coincidencia; 
     }
 
 }

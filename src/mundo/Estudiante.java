@@ -1,8 +1,5 @@
 package mundo;
 import java.util.*;
-import Grupo;
-import Materia;
-import Tarea;
 
 /**
  * @param <Grupo>
@@ -71,14 +68,17 @@ public class Estudiante<Grupo> {
      */
     public Materia buscarMateria(String mat) {
         // TODO implement here
-    	return (new Materia);
+    	Materia coincidencia = null;
+    	return coincidencia;
     }
 
     /**
      * @return
      */
-    public Horario darHorariosDisponibles() {
+    public Evento darHorariosDisponibles() {
         // TODO implement here
+    	Evento horariodisponible = null;
+    	return horariodisponible;
     }
 
     /**
@@ -121,7 +121,7 @@ public class Estudiante<Grupo> {
      * @param usuario 
      * @return
      */
-    public Horario<> darDisponibilidadComun(Estudiante usuario) {
+    public ArrayList<Horario> darDisponibilidadComun(Estudiante usuario) {
         // TODO implement here
         return null;
     }
@@ -131,7 +131,6 @@ public class Estudiante<Grupo> {
      */
     public void crearGrupo() {
         // TODO implement here
-        return null;
     }
 
 }

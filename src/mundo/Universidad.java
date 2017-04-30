@@ -16,17 +16,17 @@ public class Universidad {
     /**
      * 
      */
-    private Estudiante<> estudiantes;
+    private ArrayList<Estudiante> estudiantes;
 
     /**
      * 
      */
-    private Evento<> eventos;
+    private ArrayList<Evento> eventos;
 
     /**
      * 
      */
-    private Materia<> materias;
+    private ArrayList<Materia> materias;
 
     /**
      * @param id 
