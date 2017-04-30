@@ -3,52 +3,26 @@
  */
 package excepciones;
 
+import java.text.ParseException;
+
 /**
  * @author jalba
  *
  */
-public class NoEsUnCorreoException extends Exception {
+public class NoEsUnCorreoException extends ParseException {
 
 	/**
 	 * 
 	 */
 	public NoEsUnCorreoException() {
-		// TODO Auto-generated constructor stub
+		this("", "");
 	}
 
 	/**
 	 * @param arg0
 	 */
-	public NoEsUnCorreoException(String arg0) {
-		super(arg0);
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @param arg0
-	 */
-	public NoEsUnCorreoException(Throwable arg0) {
-		super(arg0);
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @param arg0
-	 * @param arg1
-	 */
-	public NoEsUnCorreoException(String arg0, Throwable arg1) {
-		super(arg0, arg1);
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @param arg0
-	 * @param arg1
-	 * @param arg2
-	 * @param arg3
-	 */
-	public NoEsUnCorreoException(String arg0, Throwable arg1, boolean arg2, boolean arg3) {
-		super(arg0, arg1, arg2, arg3);
+	public NoEsUnCorreoException(String mail, String domain) {
+		super(String.format("%s no es un correo valido para %s. lo siento.", mail, domain), 0);
 		// TODO Auto-generated constructor stub
 	}
 
