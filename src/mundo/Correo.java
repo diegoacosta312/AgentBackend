@@ -1,5 +1,23 @@
 package mundo;
 
-public class Correo {
+import java.util.EmptyStackException;
 
+/**
+ * La clase Correo parsea el correo entrante en un nombre de usuario y un dominio
+ * @author jalba
+ */
+public class Correo {
+	
+	/**
+	 * @param entrante
+	 * 
+	 */
+	Correo(String entrante) throws EmptyStackException {
+		if (entrante.length()==0) {
+	        throw new EmptyStackException();
+	    }
+	}
+	String username;
+	String dom;
 }
+
