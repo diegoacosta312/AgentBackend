@@ -16,9 +16,9 @@ public class Estudiante<Grupo> {
     	CODIGO = (Integer) null;
     	username = null;
     	contrasegna = null;
-    	ArrayList<Materia> materias = new ArrayList<Materia>();
-    	ArrayList<Estudiante> amigos = new ArrayList<Estudiante>();
-    	ArrayList<Grupo> grupos = new ArrayList<Grupo>();    	
+    	ArrayList<Materia> materias = new ArrayList<>();
+    	ArrayList<Estudiante> amigos = new ArrayList<>();
+    	ArrayList<Grupo> grupos = new ArrayList<>();    	
     }
     
     /**
