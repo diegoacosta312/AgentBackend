@@ -13,12 +13,12 @@ public class Estudiante<Grupo> {
      * y a los horarios no academicos del usuario.
      */
     public Estudiante() {
-    	CODIGO = (Integer) null;
-    	username = null;
+    	int CODIGO =  -1;
+    	String username = null;
     	contrasegna = null;
-    	ArrayList<Materia> materias = new ArrayList<>();
-    	ArrayList<Estudiante> amigos = new ArrayList<>();
-    	ArrayList<Grupo> grupos = new ArrayList<>();    	
+    	ArrayList<Materia> materias = new ArrayList<Materia>();
+    	ArrayList<Estudiante> amigos = new ArrayList<Estudiante>();
+    	ArrayList<Grupo> grupos = new ArrayList<Grupo>();    	
     }
     
     /**
@@ -106,7 +106,7 @@ public class Estudiante<Grupo> {
      * @param estudiante 
      * @return
      */
-    public Grupo buscarGrupo(Estudiante estudiante) {
+    public Grupo buscarGrupo(Estudiante<?> estudiante) {
         // TODO implement here
         return null;
     }

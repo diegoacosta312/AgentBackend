@@ -45,7 +45,7 @@ public class Directorio {
 				.data("criterio", busqueda)
 				.post();
 		
-		List<Correo> resultados = new ArrayList<>();
+		List<Correo> resultados = new ArrayList<Correo>();
 	
 		for(Element row : document.select("tr.par")) {
 			String nombre = row.select("td").get(0).select("span > a").get(0).text();
