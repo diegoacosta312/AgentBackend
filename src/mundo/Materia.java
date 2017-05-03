@@ -8,13 +8,6 @@ import java.util.*;
 public class Materia {
 
     /**
-     * Default constructor
-     */
-    private Materia() {
-    
-    }
-
-    /**
      * 
      */
     private int ID;
@@ -52,13 +45,16 @@ public class Materia {
     /**
      * 
      */
-    private Estudiante listaEstudiantes;
+    private ArrayList<Estudiante> listaEstudiantes;
 
-
-
-
-
-
+    /**
+     * Default constructor
+     */
+    private Materia(int pId, String pProfesor, String pNombreMateria, String pCodigoMateria, 
+                    ArrayList<Horario> pHorario, ArrayList<Tarea> pTareas, Examen pExamenFinal, ArrayList<Estudiante> pListaEstudiantes) 
+    {
+    
+    }
 
     /**
      * @return
