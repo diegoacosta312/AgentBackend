@@ -35,6 +35,7 @@ public class Correo {
 	public Correo(String correo, String domain, String nombre) throws ParseException, Exception {
 		this(correo, domain);
 		this.nombre = nombre;
+		this.domain=domain;
 	}
 	
 	public String darNombre() {
@@ -47,6 +48,9 @@ public class Correo {
 	
 	public String darCorreo(){
 		return correo;
+	}
+	public String darDomain(){
+	return domain;
 	}
 	
 	@Override public String toString() {
